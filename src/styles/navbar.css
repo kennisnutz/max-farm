@@ -1,0 +1,99 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+h3 .logo{
+  margin: 0 2rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+nav .links{
+  margin: 0 2rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+
+}
+nav .links:hover{
+  color:var(--secondary-color)
+}
+
+header .nav-btn{
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+header .connect-btn{
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  height: 2.5rem;
+  padding:0 1.2rem;
+  border-radius: .4rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 1024px){
+  header .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--main-color);
+    transition: 1s;
+    transform: translateX(-170vh);
+  }
+
+  header .responsive-nav{
+    transform: none;
+  }
+
+  nav .nav-close-btn{
+    position: absolute;
+    top:2rem;
+    right: 2rem;
+  }
+
+  nav .links{
+    font-size: 1.5rem;
+  }
+
+  
+}
+
+@media only screen and (max-width: 600px){
+  header h3{
+    display: none;
+  }
+
+}

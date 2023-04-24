@@ -1,0 +1,138 @@
+
+.container{
+  display: flex; 
+  justify-content: space-between;  
+  margin: auto;
+  margin-top: 1rem;
+  width: 90%;
+  
+
+}
+
+.container .left-side, .container .right-side{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem; 
+  width: 40%;
+  margin: auto;
+ 
+  
+}
+
+.left-side h1{
+ color: var(--text-color);
+ font-weight: 700;
+ font-size: 2.8rem;
+}
+
+.left-side .vaults-info{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center; 
+  font-size: 2rem;
+  color: var(--text-color);
+  
+}
+
+.left-side .vaults-info .logo{
+  padding:0 1rem;
+  background-image: linear-gradient(to right, var(--main-color) , var(--main-color-light));
+  border: 0.1rem solid #eee;
+  border-radius: .5rem;
+  
+}
+
+.left-side .vaults-info .vaults-info-item{
+  
+}
+
+.right-side .container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right-side .container .title{
+  font-size: 2.5rem;
+  display: flex;
+  gap: .8rem;
+  font-weight: 700;
+  color: rgb(102, 69, 7);
+}
+.right .container .title .value{
+  color: var(--text-color);
+}
+
+.right-side .container span{
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.right-side .container  h4{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1024px){
+
+  .container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+    
+  }  
+
+  .container .left-side, .right-side{
+    padding: 1rem;          
+    align-items: center;
+    width: 100%;   
+    
+  }
+   
+  
+  .right-side .container .title{
+    font-size: 2.4rem;
+  }
+  .right-side .container span{
+    
+    font-size: 1.5rem;
+    
+  }
+  
+  .right-side .container  h4{
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 784px){
+  .container{
+    flex-direction: column;
+  }
+
+  
+
+  .right-side .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-side .container .title{
+    gap: 0.3rem;
+  }
+
+  .right-side .container span{
+    
+    font-size: 1.4rem;
+    
+  }
+  
+  .right-side.container  h4{
+    font-size: .8rem;
+   
+  }
+}

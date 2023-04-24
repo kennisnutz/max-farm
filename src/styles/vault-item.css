@@ -1,0 +1,7 @@
+.vault-item-container{
+
+}
+
+.vault-item-container:hover{
+  cursor: pointer;
+}

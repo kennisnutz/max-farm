@@ -1,0 +1,33 @@
+main{
+  /* background-color: var(--main-color-light); */
+  height: 100vh;
+  padding: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+main .hero-section{
+  background-color: blue;
+  height: 20rem;
+}
+
+main .search-filter-section{
+ 
+  
+}
+
+main .vaults-container{
+  margin-top: 2rem;
+  /* background-color: blue; */
+}
+
+@media only screen and (max-width: 1024px){
+
+}
+
+@media only screen and (max-width: 784px){
+  main{
+    padding: 0;
+  }
+}

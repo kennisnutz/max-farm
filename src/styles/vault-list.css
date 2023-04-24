@@ -1,0 +1,7 @@
+.vault-list-container{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column; 
+  /* background-color: gray; */
+  justify-content: flex-start;
+}
